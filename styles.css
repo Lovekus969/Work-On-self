@@ -1,0 +1,41 @@
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .traffic-light {
+    background-color: #333;
+    width: 100px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  
+  .light {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 auto;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
