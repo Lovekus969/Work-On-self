@@ -1,0 +1,56 @@
+RideNow - A scalable ride-sharing backend system inspired by Uber, built using Node.js, Express, MongoDB, and Redis. Implements real-time ride matching, geolocation tracking, and microservice-ready architecture. Designed for high performance, extensibility, and real-world system design practice.
+
+
+#  RideNow - Uber Backend Clone
+
+RideNow is a scalable ride-sharing backend system inspired by Uber’s real-world architecture. This project is designed to simulate core functionalities like user management, real-time ride requests, driver-rider matching, and location tracking. It's an ideal system design portfolio project for aspiring backend engineers and FAANG candidates.
+
+---
+
+## Features
+
+-  Rider & Driver Registration/Login (JWT Auth)
+-  Real-time Location Tracking with Socket.IO
+-  Nearby Driver Discovery using Geohashing
+-  Ride Request & Matching Logic
+-  ETA and Fare Estimation
+-  Ride History for Both Rider & Driver
+-  RESTful API with Express.js
+-  MongoDB for User & Ride Data
+- Redis for Caching and Location Speed
+
+---
+
+##  System Design Principles
+
+- Microservices-ready architecture
+- Separation of Concerns (Auth, Ride, Matching services)
+- Scalable data storage with NoSQL (MongoDB)
+- Real-time communication via WebSockets
+- Stateless API design
+- Can integrate Kafka/RabbitMQ for event streaming (future scope)
+
+---
+
+##  Tech Stack
+
+| Layer            | Tech                       |
+|------------------|----------------------------|
+| Backend API      | Node.js, Express.js        |
+| Real-Time Engine | Socket.IO                  |
+| Database         | MongoDB                    |
+| Caching          | Redis                      |
+| Auth             | JWT (JSON Web Tokens)      |
+| Geolocation      | Geohashing, Haversine Algo |
+| Deployment       | Docker, PM2                |
+
+---
+
+##  Setup Instructions
+
+```bash
+git clone https://github.com/your-username/uber-backend-clone.git
+cd uber-backend-clone
+npm install
+cp .env.example .env  # Fill your config values
+npm run dev
