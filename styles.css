@@ -1,41 +1,54 @@
+
+/* Base styles */
 body {
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  padding: 20px;
+}
+
+.card {
+  border: 2px solid #444;
+  padding: 1rem;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Specificity Test */
+#profile-card .name {
+  color: blue;
+}
+
+.card .name {
+  color: green;
+}
+
+.name {
+  color: orange !important;
+}
+
+/* Dark mode override using higher specificity */
+.card.dark-mode {
+  background-color: #333;
+  color: white;
+  border-color: #777;
+}
+
+.card.dark-mode .name {
+  color: #90ee90 !important;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card {
+    background: #f0f0f0;
+    font-size: 14px;
   }
-  
-  .traffic-light {
-    background-color: #333;
-    width: 100px;
-    height: 260px;
-    border-radius: 20px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  }
-  
-  .light {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #555;
-    margin: 0 auto;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
+}
