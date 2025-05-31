@@ -32,10 +32,22 @@ The **Two Pointer Technique** is a powerful and efficient approach to solve prob
 - Even though we "cut" the search space from both ends, we are not dividing it like binary search.
 - **Binary Search** → Cuts search space in half → `O(log n)`
 - **Two Pointer** → Checks each element at most once → `O(n)`
+-------------------------------------------------------         Using Hashmap      ----------------------------------------------------------------------
+# 🔍 Why Do We Use `complement = target - num` in Two Sum?
 
-So, two-pointer runs in:
+In the **Two Sum** problem, we are given:
+- An array of integers `nums[]`
+- A target integer `target`
 
-```text
-Best case: O(1)     → found pair early  
-Worst case: O(n)    → full linear scan
+Our goal: **Find two numbers in the array whose sum is equal to the target.**
+
+---
+
+## ✅ Key Insight: Use Complements
+
+At each index `i`, we have:
+
+int num = nums[i];
+int complement = target - num;
+
 
