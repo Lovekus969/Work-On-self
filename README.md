@@ -49,5 +49,52 @@ At each index `i`, we have:
 
 int num = nums[i];
 int complement = target - num;
+ What is a Linked List?
+A Linked List is a linear data structure where each element (node) points to the next one. Unlike arrays, elements are not stored in contiguous memory.
+
+Each node has:
+
+data — the value
+
+next — reference to the next node
+
+🔍 Types of Linked Lists:
+Type	Description
+Singly Linked List	Nodes point only to the next node
+Doubly Linked List	Nodes point to both next and previous nodes
+Circular Linked List	Last node points to the first, forming a loop
+
+🧱 Structure of a Singly Linked List Node:
+java
+Copy
+Edit
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+🔁 Basic Operations:
+1. Insertion
+At beginning
+
+At end
+
+At a given position
+
+2. Deletion
+From beginning
+
+From end
+
+From a given position
+
+3. Traversal
+Go node by node using .next
+
+✅ Example: Basic Linked List Creation & Traversa
 
 
