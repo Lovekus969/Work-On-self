@@ -96,5 +96,7 @@ From a given position
 Go node by node using .next
 
 ✅ Example: Basic Linked List Creation & Traversa
+This week target June 12 
+Array , string , sliding window and the two pointer appproch adn more ok 
 
 
